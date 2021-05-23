@@ -1,0 +1,166 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image:url("../img/210912.jpg");
+	background-repeat: round;
+}
+
+header, footer {
+	background-color: rgba(0,110,255);
+	padding: 1%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.5em;
+	line-height: 1.5;
+}
+
+.menu-opcoes {
+	text-align: center;
+}
+
+.fixo {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+.ajustes {
+	line-height: 1;
+	text-align: center;
+}
+
+.ajustes li:hover {
+	color: blue;
+}
+
+.container {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+@media screen and (max-width: 599px){
+	.container {
+		margin-top: 65%;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.container {
+		margin-top: 40%
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		margin-top: 20%;
+	}
+
+	header {
+		flex-direction: row;
+		position: relative;
+	}
+
+	.menu-opcoes {
+		position: absolute;
+		right: 5%;
+		top: 45%;
+	}
+
+	.menu-opcoes ul li {
+		display: inline;
+		margin-left: 10px;
+	}
+}
+
+h1 { 
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.titulo {
+	text-align: center;
+	color: #bfd5ff;
+	font-weight: bolder;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+p {
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1.2em;
+	text-align: justify;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;			
+}
+
+.listatexto {
+	color: #fff;
+	font-weight: bolder;
+	margin-top: 1%;
+	margin-bottom: 1%;	
+	font-size: 1em;
+}
+
+figure {
+	text-align: center;
+}
+
+.imgtexto {
+	border: 5px dashed #213d83;
+	width: 70%;
+}
+
+.metade {
+	width: 50%;
+}
+
+a:link {
+	color: #80d6ff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0096ff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0018ff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:active {
+	color: #000e96;
+	background-color: transparent;
+	text-decoration: none;				
+}
+
+table {
+	color: #fff;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+tr,td {
+	border: 5px dashed #213d83;
+	padding: 10px;
+}
+
+.textcenter {
+	text-align: center;
+}
