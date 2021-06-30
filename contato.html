@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Javascript</title>
+	<link rel="stylesheet" href="css/reset.css">
+  	<link rel="stylesheet" href="css/style.css">
+  	<link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+	<header class="fixo">
+		<h1><img class="logotipo" src="img/logotipo.png"></h1>
+		<nav class="menu-opcoes">
+			<ul class="ajustes">
+				<li><a href="index.html">Introdução</a></li>
+				<li><a href="index.html#html">HTML</a></li>
+				<li><a href="index.html#css">CSS</a></li>
+				<li><a href="index2.html">Javascript</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<h1 class="titulo">Formulário de Contato</h2>
+			<p>Entre em contato conosco para sanar dúvidas ou sugestões<p>
+			<div class="fundo">
+				<form>
+					<div class="distancia">
+						<input type="text" placeholder="Digite seu Nome">
+					</div>
+					<div class="distancia">
+						<input type="text" placeholder="Digite o Assunto">
+					</div>
+
+					<div class="distancia">
+						<fieldset>
+							<legend>Sexo</legend>
+								<input type="radio" id="male" name="gender" value="male">
+								<label for="male">Feminino</label><br>
+								<input type="radio" id="female" name="gender" value="female">
+								<label for="female">Masculino</label><br>
+						</fieldset>
+					</div>
+					<div class="distancia">
+						<fieldset>
+							<legend>Gosto Musical</legend>
+								<input type="checkbox" id="male" name="gender" value="male">
+								<label for="male">Rock</label><br>
+								<input type="checkbox" id="female" name="gender" value="female">
+								<label for="male">MPB</label><br>
+								<input type="checkbox" id="male" name="gender" value="male">
+								<label for="male">Sertanejo</label><br>
+								<input type="checkbox" id="male" name="gender" value="male">
+								<label for="male">Funk</label><br>
+						</fieldset>
+					</div>
+					<div class="distancia">
+						<label for="cars">Escolaridade: </label>
+						<select id="cars" name="cars">
+							<option value="volvo">Fundamental</option>
+							<option value="saab">Ensino Médio</option>
+							<option value="fiat">Superior</option>
+							<option value="audi">Especialização</option>
+						</select>
+					</div>
+					<div class="distancia">
+						<label for="cars">Sugestão ou Dúvida</label>
+						<textarea name="message" style="width:80%; height:200px;">Digite seu Texto</textarea>
+					</div>
+					<div class="distancia">
+						<input type="submit" value="Enviar">
+					</div>
+				</form>
+			</div>
+	</div>
+<footer class="textcenter">Rodapé</footer>
+</body>
