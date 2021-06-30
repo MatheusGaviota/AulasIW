@@ -18,6 +18,14 @@ header, footer {
 	line-height: 1.5;
 }
 
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
 .menu-opcoes {
 	text-align: center;
 }
@@ -44,40 +52,47 @@ header, footer {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	margin-bottom: 7%;
 }
 
-@media screen and (max-width: 599px){
-	.container {
-		margin-top: 65%;
-	}
+#sobre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
 }
 
-@media screen and (min-width: 600px){
-	.container {
-		margin-top: 40%
-	}
+#sobre .sobre {
+	text-align: center
 }
 
-@media only screen and (min-width: 768px) {
-	.container {
-		margin-top: 20%;
-	}
+#galeria {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
 
-	header {
-		flex-direction: row;
-		position: relative;
-	}
+#galeria .galeria {
+	text-align: center;
+}
 
-	.menu-opcoes {
-		position: absolute;
-		right: 5%;
-		top: 45%;
-	}
+.imggaleria {
+	width: 80%;
+	border-radius: 50px;
+	box-shadow: 10px 10px grey;
+	margin-bottom: 20px;
+}
 
-	.menu-opcoes ul li {
-		display: inline;
-		margin-left: 10px;
-	}
+.imgsobre {
+	width: 20%;
+	height: 20%;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+.imgsobre:hover {
+	transform: rotate(100deg);
 }
 
 h1 { 
@@ -86,6 +101,10 @@ h1 {
 
 h2 {
 	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
 }
 
 .titulo {
@@ -163,4 +182,94 @@ tr,td {
 
 .textcenter {
 	text-align: center;
+}
+
+.fundo {
+	background: #66CDAA;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3%;
+	font-size: 1.2em;
+}
+
+.distancia {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+input[type=text], select, textarea {
+	width: 80%;
+	padding: 12px 20px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #3CB371;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+fieldset {
+	width: 80%;
+	border: 2px solid #ccc;
+	padding: 2%;
+}
+
+@media screen and (max-width: 599px){
+	.container {
+		margin-top: 65%;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.container {
+		margin-top: 40%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		margin-top: 20%;
+	}
+
+	header {
+		flex-direction: row;
+		position: relative;
+	}
+
+	.menu-opcoes {
+		position: absolute;
+		right: 5%;
+		top: 45%;
+	}
+
+	.menu-opcoes ul li {
+		display: inline;
+		margin-left: 10px;
+	}
+
+	#sobre, #galeria {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+	}
+
+	#sobre h1, h3, p, #galeria {
+		width: 100%;
+		text-align: center;
+	}
+
+	#sobre .sobre, #galeria .galeria {
+		width: 25%;
+		text-align: center;
+	}
 }
